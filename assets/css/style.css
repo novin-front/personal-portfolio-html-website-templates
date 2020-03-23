@@ -363,18 +363,18 @@ ol.header-ol-list {
     left: 0;
     right: 0;
 }
-.experience-discription {
+.section-heading-discription {
     font-size: .8rem;
     margin-bottom: 3em;
     color: #413333;
     line-height: 28px;
 }
-.experience-title {
+.section-heading-title {
     font-size: 1.4rem;
     color: #000;
     padding-bottom: .8em;
 }
-.experience-title span{
+.section-heading-title span {
     color: #9f69f1;
 }
 .experience-card {
@@ -428,6 +428,46 @@ ol.header-ol-list {
 }
 .accordion{
     z-index: 1;
+}
+/******** services section  *****/
+.services-section{
+    width: 100%;
+    padding: 80px 0;
+    background-color: #fff;
+}
+.box-service {
+    width: 100%;
+    border: 1px solid #9a5cf8;
+    padding: 2.5em 1.3em;
+    transition: all .4s;
+    background-color:#fff;
+    cursor: pointer;
+    margin-bottom: 1.5em;
+}
+.box-service:hover {
+    background-color:#9f69f1;
+    -webkit-box-shadow: 0px 2px 19px 0px rgba(159, 105, 241, 1);
+    -moz-box-shadow: 0px 2px 19px 0px rgba(159, 105, 241, 1);
+    box-shadow: 0px 2px 19px 0px rgba(159, 105, 241, 1);
+}
+.box-service:hover .icon-box-service,
+.box-service:hover .box-tiitle-service,
+.box-service:hover .box-discription-service {
+    color: #fff;
+}
+.icon-box-service {
+    font-size: 1.8rem;
+    color: #9f69f1;
+    padding-bottom: .4em;
+}
+.box-tiitle-service {
+    font-size: 1.1rem;
+    color: #000;
+    padding-bottom: .7em;
+}
+.box-discription-service {
+    font-size: .8rem;
+    color: #343f51;
 }
 @media screen and (max-width: 1690px) {
     
