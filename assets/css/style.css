@@ -1,0 +1,305 @@
+@font-face {
+    font-family: iransans;
+    src: url('../fonts/iransans/IRANSansWeb.eot');
+    src: url('../fonts/iransans/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/iransans/IRANSansWeb.woff2') format('woff2'),
+        url('../fonts/iransans/IRANSansWeb.woff') format('woff'),
+        url('../fonts/iransans/IRANSansWeb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    font-family: iransans;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    direction: rtl;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+a,a:hover{
+    text-decoration: none;
+}
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+h1 , .h1 {
+    font-size: 2.2rem;
+}
+h2,
+.h2 {
+    font-size: 2rem;
+}
+h3,
+.h3 {
+    font-size: 1.8rem;
+}
+h4,
+.h4{
+    font-size: 1.6rem;
+}
+h5,
+.h5 {
+    font-size: 1.4rem;
+}
+h6,
+.h6 {
+    font-size: 1.2rem;
+}
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+/**** main menu nav header  *****/
+nav.main-nav-Wrraper {
+    width: 100%;
+    height: 60px;
+    background: #9f69f1;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.64);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.64);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.64);
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+.main-menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+.main-menu-list {
+    display: flex;
+    flex-flow: wrap;
+}
+.main-menu-list li .link-mneu-tag {
+    font-size: 1rem;
+    color: #e9e9e9;
+    padding: 0 15px;
+    transition: all .4s;
+}
+.main-menu-list li .link-mneu-tag:hover,
+.main-menu-list li .link-mneu-tag.active {
+    color: #fff;
+}
+/******** header content style  ******/
+.header-section {
+    padding-top:60px;
+    width: 100%;
+    background: #7d4bca;
+    overflow: hidden;
+    position: relative;
+}
+.header-content-area {
+    color: #fff;
+}
+.header-content-area span {
+    display: block;
+    font-size: .85rem;
+    margin-bottom: 10px;
+}
+.header-ol-list li {
+    list-style: decimal;
+    font-size: .9rem;
+    padding-top: 10px;
+}
+.header-content-title small {
+    background: #fff;
+    color: #7d4bca;
+    padding: 0 7px;
+}
+.header-shap-wrapper {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    transform: rotateX(180deg) scale(3.8);
+}
+ol.header-ol-list {
+    padding: 10px 40px;
+}
+.header-shap-wrapper-tow {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    transform: translateX(-85%) scale(3.5);
+}
+.header-shap-wrapper-tow svg,
+.header-shap-wrapper svg {
+    width: 100%;
+    height: 100%;
+}
+.shape-circle {
+    width: 160px;
+    position: absolute;
+    right: -12px;
+    top: 0;
+    z-index: 0;
+}
+.shape-circle-tow {
+    width: 230px;
+    position: absolute;
+    left: 2%;
+    bottom: 5%;
+    z-index: 0;
+}
+/* button style costom */
+.btn-custom {
+    display: inline-block;
+    font-weight: 400;
+    color: #363636;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 2px solid #363636;
+    padding: .375rem .75rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    cursor: pointer;
+    transition:all .4s;
+}
+.btn-custom:hover {
+    background-color:#9f69f1;
+    color: white;
+    border: 2px solid #9f69f1;
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(159, 105, 241, 0.61);
+    -moz-box-shadow: 0px 2px 15px 0px rgba(159, 105, 241, 0.61);
+    box-shadow: 0px 2px 15px 0px rgba(159, 105, 241, 0.61);
+}
+.btn-white{
+    background-color:transparent;
+    color: white;
+    border: 2px solid #fff;
+}
+.btn-white:hover{
+    background-color:transparent;
+    color: white;
+    border: 2px solid #fff;
+    box-shadow: none;
+    opacity: .7;
+}
+.btn-Purple {
+    background-color: #7d4bca;
+    color: #fff;
+    border: 2px solid #7d4bca;
+    -webkit-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.53);
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.53);
+    transition:all .4s;
+}
+
+.btn-Purple:hover {
+    background-color: #7d4bca;
+    border: 2px solid #6c3cb4;
+    box-shadow: none;
+}
+
+.pull-row-flex {
+    position: relative;
+    flex-flow: row-reverse;
+}
+@media screen and (max-width: 1690px) {
+    
+}
+
+@media screen and (max-width: 1280px) {
+    
+}
+
+@media screen and (max-width: 980px) {
+    
+}
+@media screen and (max-width: 920px) {
+    .header-shap-wrapper-tow {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .header-section{
+        height: auto;
+        padding-top: 100px;
+    }
+    .pull-row-flex {
+        flex-flow: column;
+    }
+    .header-shap-wrapper{
+        display: none;
+        transform: rotateX(180deg) scale(2.8);
+    }
+    .pull-row-flex .col-12{
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 480px) {
+   .header-content-area h1{
+       font-size: 1.3rem;
+   }
+}
