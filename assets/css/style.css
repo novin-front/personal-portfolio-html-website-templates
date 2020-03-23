@@ -508,6 +508,53 @@ ol.header-ol-list {
     right: 0;
     opacity: .3;
 }
+/******* testimonial section  ******/
+.box-coments {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding:0 20px;
+    margin: 15px 0;
+    -webkit-box-shadow: -2px 5px 14px 1px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: -2px 5px 14px 1px rgba(0, 0, 0, 0.29);
+    box-shadow: -2px 5px 14px 1px rgba(0, 0, 0, 0.29);
+    
+}
+.icon-coment {
+    font-size: 8rem;
+    color: #9f69f1;
+}
+.coment-title {
+    font-size: 1rem;
+    color: #575757;
+}
+
+.coment-author {
+    font-size: .85rem;
+    padding: 10px 0;
+    color: #152136;
+}
+.coment-text {
+    font-size: .9rem;
+    color: #152136;
+}
+.testimonial-section {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #fff;
+}
+.carousel-indicators li{
+    background-color: #040404;
+}
+.carousel-indicators{
+    bottom: -40px;
+}
+.carousel-control-next,
+.carousel-control-prev{
+    color:#040404;
+    display: none;
+}
 @media screen and (max-width: 1690px) {
     
 }
@@ -546,10 +593,30 @@ ol.header-ol-list {
     .main-menu-list{
         display: none;
     }
+    .box-coments {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .experience-shape-tow {
+        bottom: -40px;
+        right: -18%;
+    }
+    .experience-shape-one {
+        left: -14%;
+        top: -35px;
+    }
 }
 
 @media screen and (max-width: 480px) {
    .header-content-area h1{
        font-size: 1.3rem;
+   }
+   .experience-shape-one {
+       left: -25%;
+       top: -22px;
+   }
+   .experience-shape-tow {
+       bottom: -70px;
+       right: -27%;
    }
 }
