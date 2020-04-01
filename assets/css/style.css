@@ -181,7 +181,6 @@ nav.main-nav-Wrraper {
     height: 100%;
     top: 0;
     right: 0;
-    background: rgba(0, 0, 0, .6);
     z-index: 9;
     transition: all .5s;
     transform: translateX(100%)
@@ -190,7 +189,7 @@ nav.main-nav-Wrraper {
     transform: translateX(0)
 }
 .mobile-nav-bg {
-    width: 75%;
+    width: 100%;
     height: 100%;
     position: relative;
     background: rgb(125, 75, 202);
@@ -216,6 +215,7 @@ nav.main-nav-Wrraper {
 .mobile-main-menu {
     width: 100%;
     margin-top: 15px;
+    text-align: center;
 }
 #close-menu-btn {
     background: transparent;
@@ -232,6 +232,7 @@ nav.main-nav-Wrraper {
     font-size: 1rem;
     color: #fff;
     transition: all .4s;
+    border-bottom: 1px solid #8453ce;
 }
 .link-mneu-mobile:hover,
 .link-mneu-mobile:focus{
